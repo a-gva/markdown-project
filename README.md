@@ -1,6 +1,6 @@
 ## App Deploy
 
-https://my-solution-eight.vercel.app/
+https://markdown-project.vercel.app/
 
 ### Run Project & Test
 
@@ -10,7 +10,7 @@ npm start
 npm run test
 ```
 
-#### Results
+#### Test Results (Jest)
 
 ```
 PASS src/App.test.tsx
@@ -21,4 +21,13 @@ PASS src/App.test.tsx
 ✓ #5: renders markdown output - links (25 ms)
 ✓ #6: renders markdown output - blockquotes (25 ms)
 ✓ #7: renders markdown output - regular text with p tags (92 ms)
+```
+
+#### Input Sanitization
+
+```
+import DOMPurify from 'dompurify'
+
+dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(parseMarkdown(input)) }}
+
 ```
