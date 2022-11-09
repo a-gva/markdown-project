@@ -1,3 +1,9 @@
+## About
+
+A Markdown Live Preview using Regex logic.
+Contains a text input area and an output area into which to render the formatted
+markdown.
+
 ## App Deploy
 
 https://markdown-project.vercel.app/
