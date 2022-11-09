@@ -74,7 +74,6 @@ function App() {
             onChange={(e) => setInput(e.target.value)}
             cols={60}
             rows={5}
-            // value={inputSample}
             defaultValue={inputSample}
           ></textarea>
         </div>
