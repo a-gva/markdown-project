@@ -16,7 +16,6 @@ function App() {
 
   function parseMarkdown(inputText: any) {
     const htmlText = inputText
-      // .replace(/.*/gim, '<p>$1</p>')
 
       // headings
       .replace(/^# (.*$)/gim, '<h1>$1</h1>')
@@ -49,6 +48,8 @@ function App() {
 
       // line breaks
       .replace(/\n$/gim, '<br />')
+
+      // regular text
       .replace(/(.+?)(\n|$)+/gim, '<p>$1</p>\n\n');
 
     return htmlText.trim();
