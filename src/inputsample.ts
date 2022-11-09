@@ -1,23 +1,21 @@
 //export template literal variable
-export const inputSample: string = `
+export const inputSample: string = `---
 
----
+When text is separated by an empty new line, it get's rendered into a new block. We use p tags for blocks.
 
-### Please edit this as you wish :)
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 
-## Images
+Excepturi reiciendis odio et labore aliquam.
 
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+# Headers
 
-## Headers
+# Heading h1
+## Heading h2
+### Heading h3
+#### Heading h4
+##### Heading h5
+###### Heading h6
 
-# This is a Heading h1
-## This is a Heading h2 
-### This is a Heading h3
-#### This is a Heading h4 
-##### This is a Heading h5 
-###### This is a Heading h6
 
 ## Emphasis
 
@@ -29,32 +27,17 @@ __This will also be bold__
 
 _You **can** combine them_
 
-## Lists
+## Images
 
-### Unordered
-
-* Item 1
-* Item 2
-* Item 2a
-* Item 2b
-
-### Ordered
-
-1. Item 1
-1. Item 2
-1. Item 3
-  1. Item 3a
-  1. Item 3b
+![Minion](https://octodex.github.com/images/minion.png)
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg)
 
 ## Links
 
-You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
+[GitHub](https://github.com/)
 
 ## Blockquotes
 
 > Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz.
->
->> Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
-
 
 `;

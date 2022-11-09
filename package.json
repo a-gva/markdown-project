@@ -10,9 +10,9 @@
     "@types/node": "^16.11.67",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "dompurify": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-markdown": "^8.0.3",
     "react-scripts": "5.0.1",
     "typescript": "^4.8.4",
     "web-vitals": "^2.1.4"
@@ -48,5 +48,8 @@
     "endOfLine": "auto",
     "quoteProps": "consistent",
     "printWidth": 100
+  },
+  "devDependencies": {
+    "@types/dompurify": "^2.3.4"
   }
 }

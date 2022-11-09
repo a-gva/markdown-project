@@ -90,16 +90,19 @@ textarea,
   border-bottom: 0.5px solid #898989;
 }
 
+a,
 p > a,
 p > a:visited {
   color: #d85beb;
   text-decoration: none;
 }
 
+a:hover,
 p > a:hover {
   color: #767676;
   text-decoration: none;
 }
+
 textarea:focus,
 .markdown:focus {
   outline: none;
@@ -110,6 +113,11 @@ textarea:focus,
 .markdown {
   font-family: 'Arial', Courier, monospace;
 }
+
+img {
+  width: 150px;
+}
+
 p > img {
   width: 150px;
 }
@@ -134,4 +142,26 @@ p > img {
   .item > .markdown {
     min-height: 100vh;
   }
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+}
+ol li::before {
+  content: counter(my-awesome-counter) '. ';
+  color: red;
+  font-weight: bold;
+}
+
+blockquote {
+  border-left: 0.25rem solid #d85beb;
+  padding-left: 1rem;
+  margin-left: 0;
+  color: #f3f4f6;
+  /* italics all characters */
+  font-style: italic;
 }
